@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+</head>
+<body>
+<center>
+<form  method="post" action="{% url 'result' %}">
+    {% csrf_token %}
+    <h1>EMPLOYEE FORM DETAILS</h1><br><br>
+    <h2><label>Employee Name  :    </label><input type="text" name="ename" required></h2>
+    <h2><label>Age          :     </label><input type="number" name="age" required></h2>
+    <h2><label>Company       :    </label><input type="text" name="company" required></h2>
+    <h2><label>Gross Salary  :     </label><input type="number" name="gross_salary" required></h2>
+    <h2><label>Tax           :     </label><input type="number" name="tax" required></h2>
+    <h2><label>Bonus          :    </label><input type="number" name="bonus" required></h2>
+    <center><button type="submit">Submit</button></center><br><br>
+   
+</form>
+</center>
+</body>
+</html>

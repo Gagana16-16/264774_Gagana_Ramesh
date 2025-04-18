@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumbled Words</title>
+</head>
+<body>
+    <center>
+        <form  method="post" action="">
+            {% csrf_token %}
+            <h1>JUMBLED WORDS</h1><br><br>
+            <h2><label>Enter any word   </label><input type="text" name="word"></h2>
+            <h3>{{word}}</h3>
+            <center><button type="submit">Submit</button></center><br><br>
+
+            
+        </form>
+        </center>
+</body>
+</html>
